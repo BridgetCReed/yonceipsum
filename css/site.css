@@ -72,7 +72,8 @@ section.text {
   margin-bottom: 30px;
   margin-top: 30px;
   background: white;
-  padding: 5px 60px;
+  text-transform: uppercase;
+  padding: 5px 55px;
 }
 
 .buttons li:hover {
