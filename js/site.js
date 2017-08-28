@@ -6,8 +6,8 @@ $(document).ready(function() {
   * @param {string} selector - DOM element that triggers event
   */
   function addButtonSelectedState(selector) {
-    $('.buttons li').removeClass('salmon');
-    $(selector).addClass('salmon');
+    $('.buttons li').removeClass('pink');
+    $(selector).addClass('pink');
   }
 
   /**

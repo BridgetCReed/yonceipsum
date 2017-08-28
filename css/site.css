@@ -1,8 +1,12 @@
 @import url('reset.css');
 
 @font-face {
-  font-family: Milano;
-  src: url("../fonts/Milano_regular.ttf");
+  font-family: 'Steelfish';
+  src: url("../fonts/steelfish-regular.ttf");
+}
+@font-face {
+  font-family: 'Steelfish Italic';
+  src: url("../fonts/steelfish-regular-italic.ttf");
 }
 
 *,
@@ -12,35 +16,34 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 html {
   height: 100%;
   width: 100%;
 }
-
 body {
-  background: url("../images/rygo-bgV3.jpg") right -100px no-repeat;
-  background-size: cover;
+  background-color: black;
   height: 100%;
-  font-family: Milano, sans-serif;
-  min-width: 880px;
-  position: relative;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 100px;
+  font-family: 'Steelfish', sans-serif;
+  color: #f4c0d7;
+  text-transform: uppercase;
 }
-
 h2 {
-  font-size: 34px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  margin-top: 5px;
   margin-bottom: 70px;
+  padding-left: 10px;
+  color: white;
+  font-style: italic;
 }
-
-h3 {
-  font-family: 'Cedarville Cursive', cursive;
-  font-size: 44px;
-}
-
 p {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
@@ -49,8 +52,9 @@ p {
 }
 
 header {
-  padding-top: 6%;
-  margin-left: 6%;
+  padding-top: 10%;
+  padding-left: 5%;
+  width: 100%;
 }
 
 section.text {
@@ -62,12 +66,13 @@ section.text {
 
 .buttons li {
   display: inline-block;
-  font-size: 40px;
-  margin-right: 50px;
+  font-size: 32px;
+  font-family: 'Steelfish', sans-serif;
+  margin-right: 10px;
   margin-bottom: 30px;
   margin-top: 30px;
-  border: 1px dashed black;
-  padding: 15px 15px 7px 15px;
+  background: white;
+  padding: 5px 60px;
 }
 
 .buttons li:hover {
@@ -91,23 +96,17 @@ section.text {
   background-color: #333;
 }
 
-.salmon {
-  color: salmon;
+li.pink {
+  background-color: #f4c0d7;
 }
 
 @media (max-width: 1250px) {
-  body {
-    background: url("../images/rygo-right-arm-crop-wide.jpg") right top no-repeat;
-  }
   section.text {
   width: 40%;
   }
 }
 
 @media (max-width: 1115px) {
-  body {
-    background: url("../images/v6.jpg") right top no-repeat;
-  }
   section.text {
   width: 45%;
   }
