@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>Rygo Ipsum</title>
+    <meta name="description" content="Ryan Gosling lorem ipsum text generator, written by Alexandra Hoefinger" />
+
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+    <script type="text/javascript" src="js/site.js"></script>
+
+
+    <link rel="icon" type="image/png" href="http://i.imgur.com/bsI3IOt.png">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cedarville+Cursive' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.min.css" />
+<!--[if lt IE 9]>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.ie.min.css" />
+<![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/site.css">
+
+  </head>
+
+  <body>
+    <div class="github-fork-ribbon-wrapper right">
+      <div class="github-fork-ribbon">
+          <a href="https://github.com/ahoef/rygo-ipsum" target="_blank">Fork me on GitHub</a>
+      </div>
+    </div>
+
+    <header>
+      <h1>hey girl,</h1>
+      <h2>i like the way you build websites.<h2>
+      <h3>ryan gosling lorem ipsum</h3>
+
+      <ul class="buttons">
+        <li class="short">short</li>
+        <li class="medium">medium</li>
+        <li class="long">long</li>
+      </ul>
+    </header>
+
+    <section class="text"></section>
+
+    <script type="text/template" class="template">
+      <section>
+        <% _.each(ipsum, function(paragraph) { %>
+          <p>
+          <% _.each(paragraph, function(sentence) { %>
+              <%= sentence %>
+          <% }) %>
+          </p>
+        <% }) %>
+      </section>
+    </script>
+
+  </body>
+
+</html>
