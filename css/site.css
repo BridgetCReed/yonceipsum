@@ -21,11 +21,13 @@ html {
   width: 100%;
 }
 body {
+  padding-top:10%;
   background-color: black;
   height: 100%;
   width: 100%;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
+  padding-top: 10%;
 }
 
 h1 {
@@ -54,13 +56,12 @@ p {
 header {
   padding-left: 5%;
   width: 100%;
+  padding-bottom: 5%;
 }
 
 section.text {
-  width: 45%;
+  width: 100%;
   text-align: left;
-  margin-left: 6%;
-  padding-bottom: 50px;
   color: white;
 }
 
@@ -84,14 +85,6 @@ section.text {
 
 .medium-text, .long-text {
   display: none;
-}
-
-.credit {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 12px;
 }
 
 li.pink {
