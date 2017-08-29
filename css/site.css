@@ -22,6 +22,8 @@ html {
 }
 body {
   padding-top:10%;
+  padding-left: 5%;
+  padding-right: 5%;
   background-color: black;
   height: 100%;
   width: 100%;
@@ -54,7 +56,6 @@ p {
 }
 
 header {
-  padding-left: 5%;
   width: 100%;
   padding-bottom: 5%;
 }
@@ -63,6 +64,8 @@ section.text {
   width: 100%;
   text-align: left;
   color: white;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .buttons li {
