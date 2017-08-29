@@ -93,31 +93,8 @@ section.text {
   right: 10px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 12px;
-
-}
-
-.github-fork-ribbon {
-  background-color: #333;
 }
 
 li.pink {
   background-color: #f4c0d7;
-}
-
-@media (max-width: 1250px) {
-  section.text {
-  width: 40%;
-  }
-}
-
-@media (max-width: 1115px) {
-  section.text {
-  width: 45%;
-  }
-}
-
-@media (max-width: 945px) {
-  section.text {
-  width: 40%;
-  }
 }
