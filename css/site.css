@@ -113,7 +113,7 @@ img.gif01 {
 }
 img.gif01.active {
   display: block !important;
-  width:75%;
+  width:100%;
   text-align: center;
   margin: 0 auto 20px;
 }
