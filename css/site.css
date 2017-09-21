@@ -96,6 +96,9 @@ section.text {
   text-align: center;
   border: none;
 }
+button {
+  color: #f4c0d7;
+}
 
 .buttons li:hover {
   cursor: pointer;
