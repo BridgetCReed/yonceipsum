@@ -8,9 +8,9 @@ $(document).ready(function() {
   function addButtonSelectedState(selector) {
     $('.buttons li').removeClass('active');
     $(selector).addClass('active');
-    
+
     $('img.gif01').removeClass('active');
-    $(selector).addClass('active');
+    $('img.gif01').addClass('active');
   }
 
   /**
@@ -20,7 +20,7 @@ $(document).ready(function() {
   * @param {number} sentenceCount - number of sentences generated in each paragraph
   */
   function generateIpsum(paragraphCount, sentenceCount){
-    $.getJSON('sentences.json',
+    $.getJSON('lyrics.json',
       function(data) {
         var sentenceArr = _.shuffle(data);
         var firstSentences = [];

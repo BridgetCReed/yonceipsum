@@ -113,7 +113,9 @@ img.gif01 {
 }
 img.gif01.active {
   display: block !important;
-  width:100%;
+  width:75%;
+  text-align: center;
+  margin: 0 auto;
 }
 
 h2.pink {
