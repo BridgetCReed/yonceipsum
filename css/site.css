@@ -126,6 +126,7 @@ button.copy {
 }
 button.copy.active {
   display: block !important;
+  width: 100%;
 }
 
 h2.pink {
