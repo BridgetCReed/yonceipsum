@@ -16,6 +16,9 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+*:focus {
+  outline: none;
+}
 html {
   height: 100%;
   width: 100%;
