@@ -8,9 +8,6 @@ $(document).ready(function() {
   function addButtonSelectedState(selector) {
     $('.buttons li').removeClass('grey');
     $(selector).addClass('grey');
-  }
-
-  function addGif01(selector) {
     $('img.gif01').removeClass('active');
     $(selector).addClass('active');
   }
@@ -58,7 +55,6 @@ $(document).ready(function() {
   function toggleIpsum(selector, paragraphCount, sentenceCount) {
     $(selector).on('click', function() {
       addButtonSelectedState(selector)
-      addGif01(selector)
       generateIpsum(paragraphCount, sentenceCount);
     })
   }
