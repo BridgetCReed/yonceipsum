@@ -55,8 +55,18 @@
     <div class="col-md-6">
 
       <img src="https://i.giphy.com/media/ImA6i1dIyeIP6/giphy.gif" class="gif01"/>
-      <section class="text"></section>
+      <span ID="copytext" STYLE="height:150;width:162;background-color:pink">
+        <section class="text"></section>
+      </span>
+      <textarea ID="holdtext" STYLE="display:none;">
+      </textarea>
+      <button onClick="ClipBoard();">Copy to Clipboard</button>
+
     </div>
+
+
+
+
     <script type="text/template" class="template">
       <section>
         <% _.each(ipsum, function(paragraph) { %>
@@ -67,6 +77,14 @@
           </p>
         <% }) %>
       </section>
+    </script>
+    
+    <script>
+        function ClipBoard() {
+          holdtext.innerText = copytext.innerText;
+          Copied = holdtext.createTextRange();
+          Copied.execCommand("Copy");
+        }  
     </script>
 
   </body>
