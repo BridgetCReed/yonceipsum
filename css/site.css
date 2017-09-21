@@ -104,7 +104,7 @@ li img {
   max-width: 15%;
 }
 
-li.grey {
+li.active {
   background-color: rgba(255,255,255,.1);
 }
 
