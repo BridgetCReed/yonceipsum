@@ -2,12 +2,17 @@ $(document).ready(function() {
 
   /**
   * Remove any existing selected states, and change a button's text color to 
-  pink if it was clicked 
+  grey if it was clicked 
   * @param {string} selector - DOM element that triggers event
   */
   function addButtonSelectedState(selector) {
-    $('.buttons li').removeClass('pink');
-    $(selector).addClass('pink');
+    $('.buttons li').removeClass('grey');
+    $(selector).addClass('grey');
+  }
+
+  function addGif01(selector) {
+    $('img.gif01').removeClass('active');
+    $(selector).addClass('active');
   }
 
   /**
@@ -53,6 +58,7 @@ $(document).ready(function() {
   function toggleIpsum(selector, paragraphCount, sentenceCount) {
     $(selector).on('click', function() {
       addButtonSelectedState(selector)
+      addGif01(selector)
       generateIpsum(paragraphCount, sentenceCount);
     })
   }
