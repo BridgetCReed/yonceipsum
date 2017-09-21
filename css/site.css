@@ -112,7 +112,7 @@ img.gif01 {
   display: none;
 }
 img.gif01.active {
-  display: block;
+  display: block !important;
   width:100%;
 }
 
