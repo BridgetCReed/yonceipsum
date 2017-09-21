@@ -138,11 +138,6 @@ span.900 {
 }
 
 
-@media (max-width:991px) {
-  button {
-    display: none;
-  }
-}
 @media (max-width:610px) {
   h2 {
     padding-left: 0px;
@@ -154,5 +149,10 @@ span.900 {
     padding: 5px;
     width: 100%;
     text-align: center;
+  }
+}
+@media (max-width:480px) {
+  button {
+    display: none;
   }
 }
