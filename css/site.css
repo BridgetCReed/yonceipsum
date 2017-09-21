@@ -152,7 +152,7 @@ span.900 {
   }
 }
 @media (max-width:480px) {
-  button {
+  button.copy.active {
     display: none;
   }
 }
