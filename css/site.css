@@ -16,9 +16,6 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-*:focus {
-  outline: none;
-}
 html {
   height: 100%;
   width: 100%;
@@ -50,6 +47,9 @@ h2 {
   padding-left: 10px;
   color: white;
   font-style: italic;
+}
+h2.pink {
+  color: #f4c0d7;
 }
 h3 {
   font-family: 'Raleway', sans-serif;
@@ -132,12 +132,10 @@ button.copy.active {
   width: 100%;
 }
 
-h2.pink {
-  color: #f4c0d7;
-}
 
-span.900 {
-  font-weight:900;
+
+button.copy.active:focus {
+  outline: none;
 }
 
 
