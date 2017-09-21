@@ -11,6 +11,10 @@ $(document).ready(function() {
 
     $('img.gif01').removeClass('active');
     $('img.gif01').addClass('active');
+
+
+    $('button.copy').removeClass('active');
+    $('button.copy').addClass('active');
   }
 
   /**

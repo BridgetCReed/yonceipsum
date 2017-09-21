@@ -120,6 +120,14 @@ img.gif01.active {
   margin: 0 auto 20px;
 }
 
+
+button.copy {
+  display: none;
+}
+button.copy.active {
+  display: block !important;
+}
+
 h2.pink {
   color: #f4c0d7;
 }
