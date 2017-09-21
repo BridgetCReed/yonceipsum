@@ -137,6 +137,12 @@ span.900 {
   font-weight:900;
 }
 
+
+@media (max-width:991px) {
+  button {
+    display: none;
+  }
+}
 @media (max-width:610px) {
   h2 {
     padding-left: 0px;
