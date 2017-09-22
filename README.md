@@ -1,6 +1,6 @@
-# The Queen's English👑
+# The Queen's English
 
-Beyoncé-inspired lorem ipsum text
+👑 Beyoncé-inspired lorem ipsum text 👑
 
 ## by [Bridget Reed](https://github.com/bridgetcreed)
 
