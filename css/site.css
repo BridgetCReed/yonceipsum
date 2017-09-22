@@ -91,7 +91,7 @@ section.text {
   background: black;
   color: white;
   text-transform: uppercase;
-  padding: 5px;
+  padding: 0px 5px 10px;
   width: 29%;
   text-align: center;
   border: none;
@@ -109,7 +109,7 @@ button {
 }
 
 li img {
-  max-width: .75em;
+  max-width: .65em;
 }
 
 li.active {
