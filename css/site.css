@@ -52,6 +52,18 @@ h2 {
 h2.pink {
   color: #f4c0d7;
 }
+h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
+  font-size: 2em;
+  line-height: 2em;
+  border-top: 2px solid white;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
 p {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
@@ -61,6 +73,7 @@ p {
 }
 i {
   font-style: italic;
+  color: #f4c0d7;
 }
 a:link {
   font-weight: 900;
@@ -68,7 +81,19 @@ a:link {
   text-decoration: none;
   color: #f4c0d7;
 }
-a:visited, a:hover, a:active {
+a:visited {
+  text-decoration: none;
+  color: #f4c0d7;
+}
+a:hover{
+  text-decoration: none;
+  color: white;
+}
+a:active {
+  text-decoration: none;
+  color: white;
+}
+a:focus {
   text-decoration: none;
   color: white;
 }
@@ -113,7 +138,7 @@ button {
 }
 
 li img {
-  max-width: .65em;
+  max-width: .75em;
 }
 
 li.active {
