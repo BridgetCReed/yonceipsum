@@ -1,3 +1,4 @@
-# yoncé-ipsum
+# The Queen's English
+## Beyoncé-inspired lorem ipsum text
 by [Bridget Reed](https://bridgetcreed..github.com/)
-> Based on the codebase for [Ryan Gosling lorem ipsum](https://github.com/ahoef/rygo-ipsum)
+> Based on [Ryan Gosling lorem ipsum](https://github.com/ahoef/rygo-ipsum)
