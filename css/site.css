@@ -39,7 +39,7 @@ h1 {
   text-transform: uppercase; 
 }
 h2 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   font-size: 1.25em;
   line-height: 1.25em;
@@ -56,6 +56,7 @@ p {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   line-height: 1.4em;
+  font-size: 1em;
   margin-bottom: 10px;
 }
 i {
@@ -71,11 +72,11 @@ a:visited, a:hover, a:active {
   text-decoration: none;
   color: white;
 }
+
 header {
   width: 100%;
   padding-bottom: 5%;
 }
-
 section.text {
   width: 100%;
   text-align: left;
