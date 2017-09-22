@@ -71,6 +71,16 @@ p {
 i {
   font-style: italic;
 }
+a {
+  font-weight: 900;
+  font-style: italic;
+  text-decoration: none;
+  color: #f4c0d7;
+}
+a:hover {
+  text-decoration: none;
+  color: white;
+}
 header {
   width: 100%;
   padding-bottom: 5%;
