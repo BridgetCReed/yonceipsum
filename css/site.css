@@ -91,7 +91,10 @@ section.text {
   text-align: left;
   color: white;
 }
-
+ul.buttons {
+  text-align: center;
+  padding-left: 0px;
+}
 .buttons li, button {
   display: inline-block;
   font-size: 32px;
