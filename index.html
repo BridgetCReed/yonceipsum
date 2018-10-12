@@ -56,7 +56,7 @@
 
       <div class='content'>
         <img src="https://i.giphy.com/media/ImA6i1dIyeIP6/giphy.gif" class="gif01"/>
-        <section class="text" id="lyrics"></section>
+        <section class="section-text" id="lyrics"></section>
         <button onclick="copyToClipboard('#lyrics')" class="copy">Copy to Clipboard</button>
         <input style="display:none;"/>
       </div>
@@ -65,7 +65,7 @@
 
     <script type="text/template" class="template">
         <% _.each(ipsum, function(paragraph) { %>
-          <p>
+          <p class='paragraph'>
           <% _.each(paragraph, function(sentence) { %>
               <%= sentence %>
           <% }) %>

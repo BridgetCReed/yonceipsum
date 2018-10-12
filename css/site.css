@@ -1,29 +1,5 @@
-p {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300;
-  line-height: 1.4em;
-  font-size: 1em;
-  margin-bottom: 10px;
-}
-
-section.text {
-  width: 100%;
-  text-align: left;
-  color: white;
-}
-
 button {
   color: #f4c0d7;
-}
-
-img.gif01 {
-  display: none;
-}
-img.gif01.active {
-  display: block !important;
-  width:100%;
-  text-align: center;
-  margin: 0 auto 20px;
 }
 
 button.copy {
@@ -42,8 +18,5 @@ button.copy.active:focus {
 @media screen and (max-width:480px) {
   button.copy.active {
     display: none !important;
-  }
-  section.text {
-    margin-bottom: 40px;
   }
 }
