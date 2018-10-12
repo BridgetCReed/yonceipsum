@@ -1,0 +1,23 @@
+.button-copy {
+  color: var(--highlight-color);
+  display: none;
+  font-size: 32px;
+  font-family: 'Steelfish', sans-serif;
+  margin-bottom: 30px;
+  background: var(--background-color);
+  text-transform: uppercase;
+  padding: 0px 5px 10px;
+  width: 29%;
+  text-align: center;
+  border: none;
+}
+
+.button-copy--active {
+  display: block;
+  width: 100%;
+}
+
+.button-copy--active:focus {
+  outline: none;
+  background-color: rgba(255,255,255,.1);
+}
