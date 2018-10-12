@@ -1,0 +1,10 @@
+@import url('reset.css');
+
+@font-face {
+  font-family: 'Steelfish';
+  src: url("../fonts/steelfish-regular.ttf");
+}
+@font-face {
+  font-family: 'Steelfish Italic';
+  src: url("../fonts/steelfish-regular-italic.ttf");
+}

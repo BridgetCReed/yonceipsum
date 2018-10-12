@@ -1,37 +1,3 @@
-@import url('reset.css');
-
-@font-face {
-  font-family: 'Steelfish';
-  src: url("../fonts/steelfish-regular.ttf");
-}
-@font-face {
-  font-family: 'Steelfish Italic';
-  src: url("../fonts/steelfish-regular-italic.ttf");
-}
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-html {
-  height: 100%;
-  width: 100%;
-}
-body {
-  padding-top:10%;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: black;
-  height: 100%;
-  width: 100%;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  padding-top: 10%;
-}
-
 h1 {
   font-size: 7.25em;
   font-family: 'Steelfish', sans-serif;
@@ -98,10 +64,6 @@ a:focus {
   color: white;
 }
 
-header {
-  width: 100%;
-  padding-bottom: 5%;
-}
 section.text {
   width: 100%;
   text-align: left;
