@@ -1,0 +1,15 @@
+/* Generics */
+@import 'generics.css';
+
+/* Settings */
+@import 'fonts.css';
+@import 'colors.css';
+
+/* Base */
+@import 'container.css';
+
+/* Objects */
+@import 'header.css';
+@import 'crowns.css';
+@import 'content.css';
+@import 'button.css';

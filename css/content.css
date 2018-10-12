@@ -1,0 +1,36 @@
+.content {
+    grid-area: content;
+  }
+  
+  .gif01 {
+    display: none;
+  }
+
+ .gif01--active {
+    display: block;
+    object-fit: contain;
+    width:100%;
+    text-align: center;
+    margin: 0 auto 20px;
+  }
+  
+  .section-text {
+    width: 100%;
+    color: var(--default-color);
+    margin-bottom: 40px;
+  }
+
+  @media (min-width:480px) {
+    .section-text {
+      margin-bottom: 0;
+    }
+  }
+
+  .paragraph {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    line-height: 1.4em;
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
