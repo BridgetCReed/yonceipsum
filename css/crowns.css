@@ -20,7 +20,7 @@
   padding: 5px;
   display: flex;
   justify-content: center;
-  align-self: center;
+  align-items: center;
 }
 
 @media(min-width:610px) {
