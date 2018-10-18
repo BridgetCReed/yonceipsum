@@ -36,7 +36,7 @@ h1 {
   font-size: 7.25em;
   font-family: 'Steelfish', sans-serif;
   color: #f4c0d7;
-  text-transform: uppercase; 
+  text-transform: uppercase;
 }
 h2 {
   font-family: 'Source Sans Pro', sans-serif;
@@ -58,6 +58,17 @@ h3 {
   font-size: 2em;
   line-height: 1em;
   border-top: 2px solid white;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+h4 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
+  font-size: 0.5em;
+  line-height: 1em;
   padding-top: 20px;
   margin-bottom: 20px;
   color: white;
@@ -111,7 +122,9 @@ ul.buttons {
   text-align: center;
   padding-left: 0px;
 }
-.buttons li, button {
+.buttons li,
+button,
+.button {
   display: inline-block;
   font-size: 32px;
   font-family: 'Steelfish', sans-serif;
@@ -131,6 +144,7 @@ button {
 
 .buttons li:hover {
   cursor: pointer;
+  background-color: rgba(255,255,255,.1);
 }
 
 .medium-text, .long-text {

@@ -1,12 +1,13 @@
 $(document).ready(function() {
 
   /**
-  * Remove any existing selected states, and change a button's text color to 
-  grey if it was clicked 
+  * Remove any existing selected states, and change a button's text color to
+  grey if it was clicked
   * @param {string} selector - DOM element that triggers event
   */
   function addButtonSelectedState(selector) {
     $('.buttons li').removeClass('active');
+    $('.buttons').removeClass('active');
     $(selector).addClass('active');
 
     $('img.gif01').removeClass('active');
@@ -19,12 +20,13 @@ $(document).ready(function() {
 
   /**
   * Create a multi-dimensional array of random ipsum text. Length is determined
-  * by the value of the paragraph & sentence params 
+  * by the value of the paragraph & sentence params
   * @param {number} paragraphCount - number of paragraphs generated
   * @param {number} sentenceCount - number of sentences generated in each paragraph
+  * @param {string} lyrics - json file to draw sentences from
   */
-  function generateIpsum(paragraphCount, sentenceCount){
-    $.getJSON('lyrics.json',
+  function generateIpsum(paragraphCount, sentenceCount, lyrics){
+    $.getJSON(lyrics,
       function(data) {
         var sentenceArr = _.shuffle(data);
         var firstSentences = [];
@@ -51,21 +53,26 @@ $(document).ready(function() {
   }
 
   /**
-  * Attach an event listener that calls functions to change a button's 
+  * Attach an event listener that calls functions to change a button's
   * selected state & generate the text block
   * @param {string} selector - DOM element that triggers event
   * @param {number} paragraphCount - number of paragraphs generated
   * @param {number} sentenceCount - number of sentences generated in each paragraph
   */
   function toggleIpsum(selector, paragraphCount, sentenceCount) {
+    var lyrics = 'lyrics.json';
+    if ($(selector).hasClass('sfw')) {
+      lyrics = 'lyrics_sfw.json';
+    }
     $(selector).on('click', function() {
       addButtonSelectedState(selector)
-      generateIpsum(paragraphCount, sentenceCount);
+      generateIpsum(paragraphCount, sentenceCount, lyrics);
     })
   }
 
   toggleIpsum('.short', 1, 8);
   toggleIpsum('.medium', 3, 5);
   toggleIpsum('.long', 5, 5);
-  
+  toggleIpsum('.sfw', 3, 6);
+
 });
