@@ -67,9 +67,8 @@ h3 {
 h4 {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 900;
-  font-size: 1em;
+  font-size: 0.5em;
   line-height: 1em;
-  border-top: 2px solid white;
   padding-top: 20px;
   margin-bottom: 20px;
   color: white;
@@ -143,9 +142,9 @@ button {
   color: #f4c0d7;
 }
 
-.buttons li:hover,
-h4.buttons.sfw:hover {
+.buttons li:hover {
   cursor: pointer;
+  background-color: rgba(255,255,255,.1);
 }
 
 .medium-text, .long-text {
@@ -156,8 +155,7 @@ li img {
   max-width: .75em;
 }
 
-li.active,
-h4.buttons.sfw:hover {
+li.active {
   background-color: rgba(255,255,255,.1);
 }
 

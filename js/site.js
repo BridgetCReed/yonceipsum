@@ -23,12 +23,9 @@ $(document).ready(function() {
   * by the value of the paragraph & sentence params
   * @param {number} paragraphCount - number of paragraphs generated
   * @param {number} sentenceCount - number of sentences generated in each paragraph
+  * @param {string} lyrics - json file to draw sentences from
   */
-  function generateIpsum(paragraphCount, sentenceCount, sfw){
-    var lyrics = 'lyrics.json';
-    if (sfw == true) {
-      lyrics = 'lyrics_sfw.json';
-    }
+  function generateIpsum(paragraphCount, sentenceCount, lyrics){
     $.getJSON(lyrics,
       function(data) {
         var sentenceArr = _.shuffle(data);
@@ -63,15 +60,19 @@ $(document).ready(function() {
   * @param {number} sentenceCount - number of sentences generated in each paragraph
   */
   function toggleIpsum(selector, paragraphCount, sentenceCount) {
+    var lyrics = 'lyrics.json';
+    if ($(selector).hasClass('sfw')) {
+      lyrics = 'lyrics_sfw.json';
+    }
     $(selector).on('click', function() {
       addButtonSelectedState(selector)
-      generateIpsum(paragraphCount, sentenceCount);
+      generateIpsum(paragraphCount, sentenceCount, lyrics);
     })
   }
 
-  toggleIpsum('.short', 1, 8, false);
-  toggleIpsum('.medium', 3, 5, false);
-  toggleIpsum('.long', 5, 5, false);
-  toggleIpsum('.sfw', 5, 5, true);
+  toggleIpsum('.short', 1, 8);
+  toggleIpsum('.medium', 3, 5);
+  toggleIpsum('.long', 5, 5);
+  toggleIpsum('.sfw', 3, 6);
 
 });
